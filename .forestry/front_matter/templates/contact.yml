@@ -1,4 +1,23 @@
 ---
 label: Contact
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: description
+  type: text
+  config:
+    required: false
+  label: description
+- name: omit_header_text
+  type: boolean
+  label: omit_header_text
+- name: type
+  type: text
+  config:
+    required: false
+  label: type
+  hidden: true
