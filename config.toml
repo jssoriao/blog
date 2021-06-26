@@ -27,12 +27,11 @@ name = "John Stephen Soriao"
 [[menu.main]]
 name = "About"
 url = "/about"
-weight = 2
-[[menu.main]]
-identifier = "posts"
-name = "Post"
-url = "post/"
 weight = 1
+[[menu.main]]
+name = "Posts"
+url = "posts/"
+weight = 2
 [[module.imports]]
 path = "github.com/rhazdon/hugo-theme-hello-friend-ng"
 [params]
