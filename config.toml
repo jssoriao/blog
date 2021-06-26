@@ -25,11 +25,6 @@ title = "John Stephen Soriao"
 [author]
 name = "John Stephen Soriao"
 [[menu.main]]
-identifier = "about"
-name = "About"
-url = "about/"
-weight = 2
-[[menu.main]]
 identifier = "posts"
 name = "Post"
 url = "post/"
