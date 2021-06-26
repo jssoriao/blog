@@ -6,7 +6,7 @@ on:
 env:
   REGISTRY: docker.io
   DOCKERHUB_USERNAME: jssoriao
-  IMAGE_NAME: jssoriao/portfolio
+  IMAGE_NAME: jssoriao/blog
 jobs:
   build:
     runs-on: ubuntu-latest
