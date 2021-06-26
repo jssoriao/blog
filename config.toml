@@ -1,7 +1,7 @@
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 archetypeDir = "archetypes"
-baseURL = "http://jssoriao.dev/"
+baseURL = "/"
 buildDrafts = false
 buildExpired = false
 buildFuture = false
