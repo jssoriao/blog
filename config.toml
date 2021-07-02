@@ -47,9 +47,9 @@ images = [""]
 keywords = "backend, web development, devops"
 [params.footer]
 author = true
-bottomText = ["Powered by <a href=\"http://gohugo.io\">Hugo</a>"]
+# bottomText = ["Powered by <a href=\"http://gohugo.io\">Hugo</a>"]
 copyright = true
-topText = []
+# topText = []
 trademark = true
 [params.logo]
 logoCursorColor = "#06f1f1"
