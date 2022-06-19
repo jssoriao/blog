@@ -45,7 +45,6 @@ jobs:
 
       - name: Update Image
         run: |
-          # echo "DOCKERHUB_IMAGE=yellow" >> $GITHUB_ENV
           DOCKERHUB_IMAGE="$DOCKERHUB_USERNAME/$DOCKERHUB_REPOSITORY:${{ github.sha }}"
           kubectl set image deployment blog blog=$DOCKERHUB_IMAGE -n blog
         env:
