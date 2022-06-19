@@ -45,5 +45,5 @@ jobs:
 
       - name: Update Image
         run: |
-          DOCKERHUB_IMAGE=${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPOSITORY }}:${{ github.sha }}
-          kubectl set image deployment ${{ secrets.DOCKERHUB_REPOSITORY }} ${{ secrets.DOCKERHUB_REPOSITORY }}=${{ DOCKERHUB_IMAGE }}
+          echo "DOCKERHUB_IMAGE=${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPOSITORY }}:${{ github.sha }}" >> $GITHUB_ENV
+          kubectl set image deployment ${{ secrets.DOCKERHUB_REPOSITORY }} ${{ secrets.DOCKERHUB_REPOSITORY }}=${{ env.DOCKERHUB_IMAGE }}
