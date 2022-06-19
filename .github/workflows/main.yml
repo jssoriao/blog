@@ -1,9 +1,14 @@
 name: Build
 
 on:
-  - push:
-      branches: [main]
-  - workflow_dispatch
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: "Test scenario tags"
+        required: false
+        type: boolean
 
 env:
   REGISTRY: docker.io
